@@ -6,19 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.rosag.cn">
-  <title>java | Rosag&#39;s blog</title>
+  <title>Devsecops理解 | Rosag&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="java">
+  <meta name="description" content="一、构建DevSecOps的初衷 伴随着移动互联网技术的高速发展，如何保障产品的安全成为了一个严峻的挑战。尤其是在产品复杂度高、更新迭代快的现状下，如何应对挑战，已经成为了企业发展必须要慎重考虑的问题。DevOps体系成为了目前解决这一难题的公认趋势。 ​       我们知道，DevOps不仅仅简单地涉及开发和运维团队。如果想充分发挥出DevOps的敏捷性和响应力，就必须将安全防护融入应用的整个">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java">
-<meta property="og:url" content="http://www.rosag.cn/2020/10/20/java/index.html">
+<meta property="og:title" content="Devsecops理解">
+<meta property="og:url" content="http://www.rosag.cn/2020/10/22/Devsecops%E7%90%86%E8%A7%A3/index.html">
 <meta property="og:site_name" content="Rosag&#39;s blog">
-<meta property="og:description" content="java">
+<meta property="og:description" content="一、构建DevSecOps的初衷 伴随着移动互联网技术的高速发展，如何保障产品的安全成为了一个严峻的挑战。尤其是在产品复杂度高、更新迭代快的现状下，如何应对挑战，已经成为了企业发展必须要慎重考虑的问题。DevOps体系成为了目前解决这一难题的公认趋势。 ​       我们知道，DevOps不仅仅简单地涉及开发和运维团队。如果想充分发挥出DevOps的敏捷性和响应力，就必须将安全防护融入应用的整个">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-10-20T09:40:30.000Z">
-<meta property="article:modified_time" content="2020-10-20T09:40:58.470Z">
+<meta property="og:image" content="s:%5Cblog%5Csource%5Csrc%5Cimg%5C3.jpg">
+<meta property="og:image" content="s:%5Cblog%5Csource%5Csrc%5Cimg%5C1.jpg">
+<meta property="og:image" content="s:%5Cblog%5Csource%5Csrc%5Cimg%5C2.jpg">
+<meta property="article:published_time" content="2020-10-22T07:48:19.000Z">
+<meta property="article:modified_time" content="2020-10-22T07:53:27.905Z">
 <meta property="article:author" content="Rosag">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="s:%5Cblog%5Csource%5Csrc%5Cimg%5C3.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Rosag&#39;s blog" type="application/atom+xml">
   
@@ -152,27 +156,71 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-java" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Devsecops理解" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      java
+      Devsecops理解
     </h1>
   
 
         
-        <a href="/2020/10/20/java/" class="archive-article-date">
-  	<time datetime="2020-10-20T09:40:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-20</time>
+        <a href="/2020/10/22/Devsecops%E7%90%86%E8%A7%A3/" class="archive-article-date">
+  	<time datetime="2020-10-22T07:48:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>java</p>
+        <p><strong>一、构建DevSecOps的初衷</strong></p>
+<p>伴随着移动互联网技术的高速发展，如何保障产品的安全成为了一个严峻的挑战。尤其是在产品复杂度高、更新迭代快的现状下，如何应对挑战，已经成为了企业发展必须要慎重考虑的问题。DevOps体系成为了目前解决这一难题的公认趋势。</p>
+<p>​       我们知道，DevOps不仅仅简单地涉及开发和运维团队。如果想充分发挥出DevOps的敏捷性和响应力，就必须将安全防护融入应用的整个生命周期中。从前，安全防护只是特定团队的责任，在开发的最后阶段才会介入。当开发周期长达数月、甚至数年时，这样做没什么问题，但是现在这种做法已经行不通了。采用DevOps可以有效推进快速频繁地开发周期（有时全程只有数周或数天）,但是过时的安全措施则可能会拖累整个流程，即使最高效的DevOps计划也可能会放慢速度。</p>
+<p><img src="S:%5Cblog%5Csource%5Csrc%5Cimg%5C3.jpg" alt="img"></p>
+<p>​       如今，在DevOps协作框架下，安全是整个IT团队的共同责任，需要贯穿至整个生命周期的每一个环节。这个理念催生出了“DevSecOps”一词，及开发、安全、运营一体化，强调必须为DevOps体系打下扎实的安全基础。</p>
+<p><strong>二、DevSecOps实践</strong></p>
+<p>（1）打造高自动化的产品安全工具链</p>
+<p>在DevSecOps中纯粹靠人力是很难适应DevOps的快节奏的，自动化能力构建是必经之路。业务安全保障的核心工作之一就是降低线上漏洞数量，通过利用产品安全工具在产品研发的各个阶段进行自动化漏洞挖掘，并将其与CI/CD进行自动化集成，在快速发现漏洞的同时确保不会降低研发效率。</p>
+<p><img src="S:%5Cblog%5Csource%5Csrc%5Cimg%5C1.jpg" alt="img"></p>
+<p>l  静态源代码扫描（SAST）</p>
+<p>静态分析源代码来检测安全漏洞，实现安全测试融入到开发阶段</p>
+<p>l  交互式应用安全检测（IAST）</p>
+<p>对应用进行在线实时的被动漏洞检测，将安全完美融入到测试阶段，在做功能测试的同时完成安全扫描，极大提升了效率</p>
+<p>l  软件成分分析（SCA）</p>
+<p>在开发过程中对使用的开源组件进行漏洞扫描，避免带来三方组件风险</p>
+<p>l  隐私合规扫描</p>
+<p>针对扫描的安全风险进行合规检查，避免上线前应用不合规造成业务返工及大量改造成本</p>
+<p><img src="S:%5Cblog%5Csource%5Csrc%5Cimg%5C2.jpg" alt="img"></p>
+<p>（2）打造普适性的DevSecOps框架</p>
+<p>我们一般会将产品的生命周期分为<strong>需求</strong>、<strong>开发</strong>、<strong>测试</strong>、<strong>发布运营</strong>等几个阶段。在每个阶段都需要有完善且严格的规范和要求来保证安全，例如在开发完成进入测试阶段时，要求正式提交的代码必须严格遵循代码风格规范，否则不允许提交代码。这些规范保证了产品能够优质和高效的交付。</p>
+<p>通过将安全检查项合理部署在产品研发的各个阶段中，可以实现安全的全链条覆盖。</p>
+<p>l  需求阶段</p>
+<p>研发及PM安全培训、针对不同业务场景的安全解决方案</p>
+<p>l  开发阶段</p>
+<p>静态源代码扫描、仓库安全检查、软件成分分析、安全编码规范检查</p>
+<p>l  测试阶段</p>
+<p>灰盒扫描（交互式应用安全检测）、全量源码安全检测、渗透测试（逻辑漏洞）、APP安全扫描、隐私合规扫描</p>
+<p>l  发布运营阶段</p>
+<p>WAF、入侵检测防护、态势感知、线上扫描自测</p>
+<p>​       通过以上安全规范打造产品的线下漏洞闭环，在产品上线前将安全威胁降到最低。同时，得益于高度自动化的安全工具链支持，虽然研发流程中嵌入了以上安全检查项，但是仍然可以满足DevOps时代产品快速迭代的要求。</p>
+<p>（3）DevSecOps安全运营</p>
+<p>在DevSecOps中需要明确，安全不再单独是安全团队的责任，而应该是产品、开发、安全、运维协同合作共同负责。在DevSecOps体系建设及后期运营的过程中，可以从以下方面进行完善：</p>
+<p>l  自动化能力更加完善</p>
+<p>自动化能力主要体现在安全问题消除率和业务效率影响两个方面。问题消除率越高、业务影响率越小，我们认为自动化的能力越强。可以从以下几个方面入手：</p>
+<p>A） 持续优化检测策略和检测规则，降低误报率和漏报率</p>
+<p>B） 自动化能力要覆盖更多关键的流程</p>
+<p>C） 持续优化自动化的用户体验，降低自动化的业务影响，尽可能做到无缝融入</p>
+<p>l  提供更加完善的安全解决方案及编码规范</p>
+<p>由于业务量庞大、业务快速迭代的特点，很多需求、涉及阶段的传统产品安全措施（如威胁建模、安全设计评审、业务设计安全评估等）难以覆盖到所有业务。在DevSecOps中，可以针对不同业务场景提供不同的安全解决方案，对各种容易出现风险的地方提供类似规范约定、bad case等方案。在PM创建需求时，可以根据业务场景选择对应的安全解决方案，并且要求研发人员研发前完成规范、安全方案的学习，从而在研发编码阶段尽可能避免这些问题。</p>
+<p>安全编码规范要求研发人员摒弃一些危险的编码习惯，比如各种拼接写法、调用不安全的默认API等，使用安全SDK中的API实现相关的功能，从而降低写出漏洞的风险。</p>
+<p>l  持续开展安全文化建设</p>
+<p>持续打造业务、安全、运维协同开展安全工作的文化氛围，明确安全不再单独是安全团队的责任，而应该各放协同合作共同负责。通过安全培训、安全产品推广等方式，让业务、测试、运维参与进安全工作中，最终形成安全团队承担咨询、洞察、能力输出等角色，业务、测试及运维等通过安全的持续赋能，达到主动保障业务安全的局面。</p>
+<p><strong>三、DevSecOps建设收益</strong></p>
+<p>通过DevSecOps体系的建设，可以将过去仅在测试阶段进行安全检查转变为产品研发全流程的安全保障，进一步提高研发效率、安全问题检出效率，降低安全问题的修复成本，并提升产品安全质量以及业务团队的安全素养。</p>
+<p>此外，业务在各个研发阶段都能看到安全相关的措施，安全措施和研发措施进行融合，增进安全协同，更能够让业务意识到产品安全并不只是安全团队的事情，而是产品线、安全团队一起协同的结果，Sec和Dev、Ops一样，都是研发过程中必须要做的工作。</p>
 
       
 
@@ -187,7 +235,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/编程//" class="article-tag-list-link color3">编程</a>
+        			<a href="/categories/安全//" class="article-tag-list-link color3">安全</a>
         		</li>
       		
 		</ul>
@@ -205,18 +253,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/10/22/Devsecops%E7%90%86%E8%A7%A3/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Devsecops理解
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/09/02/%E4%B8%83%E6%9C%88%E5%8D%8A/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">七月半</div>
+    <a href="/2020/10/20/java/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">java</div>
       <i class="icon-circle-right"></i>
     </a>
   
